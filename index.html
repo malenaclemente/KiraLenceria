@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kira lenceria</title>
         <link rel="shortcut icon" href="img/favicon 1.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Finlandica:ital@1&family=Roboto:ital,wght@1,300&family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </html>
     <body>
-        <nav class="bg-crema">
-            <div>
+        <nav class="navbar navbar-expand-lg bg-crema botonera sticky-top">
+            <div class="container-fluid">
                 <a href="index.html">
                     <img
                         src="img/logo sin fondo chico.png"
@@ -19,34 +24,44 @@
                         width="150px"
                         height="100px">
                 </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="talles.html">Talles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Envios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Productos</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="talles.html">Talles</a>
-                </li>
-                <li>
-                    <a href="envios.html">Envios</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-            </ul>
-        </nav>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+          </nav>
         <header>
-          <div> </div>  
+          <div>
             <div class="portada text-center">
                 <h2 class="portada__titulo">Sentite hermosa y comoda con nuestros conjuntos</h2>
-                </div>
+            </div>
         </header>
   
         <main>
-            <section class="text-center presentacion">
+            <section class="text-center presentacion animate__animated  animate__fadeInRight">
                 <h1 class="presentacion__titulo">Lenceria de diseño</h1>
                  <p class="presentacion__titulo--sm">
                     Kira lenceria cuenta con lenceria de diseño en diferentes telas, tamaños y
@@ -54,9 +69,9 @@
                     sentirse hermosas en todo momento.
                  </p>
             </section>
-    <div class=" grid grid-template-columns-rows"> 
-        <h2>Aprovecha nuestras promos!!!</h2>
-            <section id="inicio">
+    <div class="contenido"> 
+        <h2 class="animate__animated  animate__fadeInLeft">Aprovecha nuestras promos!!!</h2>
+            <section id="inicio" class="animate__animated  animate__fadeInLeft">
            
                 <figure class="img-promos">
                     <img
@@ -89,58 +104,24 @@
                 </figure>
                 </div>
             </section>
-            <section id="consulta">
+      
+            <section id="consulta" class="animate__animated  animate__fadeInRight">
                 <h2 class="text-left index__consultanos--md">Consultanos</h2>
-                <form class="index__consultanos" action="">
-                    <label class="index__consultanos--sm" for="nombre y apellido">Nombre y apellido:</label>
-                    <input
-                        class="index__consultanos--sm"
-                        type="nombre y apellido"
-                        id="nombre y apellido"
-                        placeholder="Nombre y apellido">
-                    <br>
-                    <label class="index__consultanos--sm" for="email">Email:</label>
-                    <input
-                        class="index__consultanos--sm"
-                        type="email"
-                        id="email"
-                        placeholder="email">
-                    <br>
-                    <label class="index__consultanos--sm" for="Telefono">Telefono:</label>
-                    <input
-                        class="index__consultanos--sm"
-                        type="Telefono"
-                        id="Telefono"
-                        placeholder="numero de telefono">
-                    <br>
-                    <label class="index__consultanos--sm" for="comentario">Dejanos un mensaje</label>
-                    <input
-                        class="index__consultanos--sm"
-                        type="comentario"
-                        id="comentario"
-                        placeholder="dejanos un comentario">
-                    <div>
-                        <textarea
-                            class="index__consultanos--sm"
-                            name=""
-                            id="comentario"
-                            cols="30"
-                            rows="10"></textarea>
-                    </div>
-                    <br>
-                    <input class="index__consultanos--sm" type="reset" value="Cancelar">
-                    <input class="index__consultanos--sm" type="submit" value="Enviar">
-                </form>
-                <div id="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.8331541870225!2d-64.65414428556078!3d-30.77926188162097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942deba41f9d6d41%3A0xa4cab4d087e4a051!2sAv.%20Cacique%20Tulian%20251%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1661143210611!5m2!1ses!2sar"
-                    width="400"
-                    height="300"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <section class="py-3 bg-crema">
+                    <div class="container-fluid">
+                        <h3 class="Contacto"></h3>
+                        <div class="row">
+                            <article class="col-sm-12 col-md-12 col-lg-8">
+                                <div class="mb-3">
+                                    <label for="eail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                           </article>
+    
             </section>
         </main>
         <footer class="text-center" id="pie">

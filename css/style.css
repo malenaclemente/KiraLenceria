@@ -19,6 +19,14 @@ body{
 
 }
 
+.lineal-gradient {
+background: rgb(225,132,255);
+background: linear-gradient(0deg, rgba(225,132,255,1) 7%, rgba(255,189,82,0.9528186274509804) 100%);
+}
+.transform:hover {
+
+}
+
 h2 {
     color: #355764;
     font-size: 3rem;
@@ -83,6 +91,11 @@ nav ul li a:hover{
    background-color: #ffc0909a;
 }
 
+.bg-celeste {
+    background-color: #d2daff7c;
+   
+
+}
 .bg-gris{
     background-color:#ffc0909a ;
 }
@@ -182,7 +195,9 @@ nav ul li a:hover{
     width: auto;
     height: auto;
     margin: 30px auto;
-}
+} 
+
+
 /*/index/*/
 #inicio {
     display: grid;
@@ -193,7 +208,24 @@ nav ul li a:hover{
     margin-left: 20px;
    
 }
+.contenido {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #e3fcfa85;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 10px; }
 
+    .contenido h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        padding: 10px 10px;
+        background-color: #f7a66cc4;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px 10px; }
+    
 #promos {
     grid-area: promos;
    }
@@ -212,14 +244,7 @@ nav ul li a:hover{
     justify-content: center;
 }
 
-.grid-template-columns-rows h2 {
-    text-transform: uppercase;
-    font-size: 3rem;
-    text-align: center;
-    padding: 10px 10px;
-    background-color: #f7a66cc4;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px 10px; }
+
 
 #consulta h2 {
 text-transform: uppercase;
@@ -356,45 +381,7 @@ margin: 10px 10px; }
     background-color: none;
 }
 /*/productos/*/
-.contenedor {
-    display: grid;
-	grid-template-columns: 20% 70% 10%;
-	grid-template-rows: repeat(4,auto);
-    align-content: center;
-    justify-content: center; }
-    
 
-.template-areas {
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 50px 300px 30px;
-	    grid-template-areas:
-	    "encabezado encabezado encabezado" 
-	    "categorias productos productos" 
-	    "footer footer footer"; 
-    }
-
-#header {
- grid-area: encabezado;
-}
-#categorias {
-   grid-area: categorias; 
-}
-
-#productos {
-    grid-area: productos;
-}
-
-#footer {
-    grid-area: footer;
-}
-
-
-.nav__secundaria {
-	color:#676565 ;
-	padding: 10px 30px ;
-	font-size: 1.3rem;
-	line-height: 1.6em;
-}
 footer{
    text-align: center; 
 }
@@ -460,31 +447,41 @@ footer{
     margin: 10px 0;
 }
 #productos .lenceria {
-    margin: 10px 0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);  
-    grid-template-rows: 400px;
-    row-gap: 100px;
-    columns: 10px
-   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
 }
+.transform:hover {
+    cursor: pointer;
+    transform: translateX(10px);
+    transition: 1s;}
+
 #productos .lenceria figure {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
     margin-left: 90px;
     margin-bottom: 20px;
+    flex-direction: row;}
 
-}
-#productos .lenceria figure img {
+
+
+
+#productos .lenceria figure img  {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     object-fit: cover;
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   
 }
 #productos .lenceria figure figcaption{
     font-size: 3rem;
-    color: #AC7088;
+    color: #0F3460;
+    background-color: #d2daff7c;
     padding: 10px;
     display: grid;
     align-items: center;
@@ -501,12 +498,26 @@ footer{
     padding-bottom: 5px 0;
 }
 
-.grid-template-columns-row{
-    display: grid;
-	grid-template-columns: repeat(4,1fr);
-	grid-template-rows: 50px 100px 80px; 
-    align-content: center;
-   justify-content: center; 
-   grid-gap: 10px;
-   gap: 10px; }
-    
+@media screen and (min-width: 768px) {
+    #promos, .botonera, .portada
+}
+        
+
+/*nosotros */
+.nosotros h1 {
+     text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7a66cc4;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0; }
+.comienzo h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7a66cc4;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+}

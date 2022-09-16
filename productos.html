@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kira lenceria</title>
         <link rel="shortcut icon" href="img/favicon 1.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Finlandica:ital@1&family=Roboto:ital,wght@1,300&family=Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-    </head>
+        <link rel="stylesheet" href="css/animate.css">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </html>
     <body>
-        
-         <nav class="bg-crema botonera text-center" id="navegacion">
-            <div>
+        <nav class="navbar navbar-expand-lg bg-crema botonera sticky-top">
+            <div class="container-fluid">
                 <a href="index.html">
                     <img
                         src="img/logo sin fondo chico.png"
@@ -20,43 +24,83 @@
                         width="150px"
                         height="100px">
                 </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="talles.html">Talles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Envios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Productos</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="talles.html">Talles</a>
-                </li>
-                <li>
-                    <a href="envios.html">Envios</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-            </ul>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
           </nav>
+
+        
      <header>
-        <div class=" contenedor text-center grid grid-template-columns-rows" id="encabezado"></div>
+        <div class=" contenedor text-center" id="encabezado"></div>
             <h2 class="portada__titulo">Conoce nuestros productos</h2>
         </div>
      </header>  
-        <main id="productos">
-            <h1 class="lenceria__titulo">Productos</h1>
-            <nav class="nav__secundaria" id="categorias">
-                <form>
-                    <select name="Categorias">
-                        <option>Categorias</option>
-                        <option value="encaje">Conjuntos con encaje</option>
-                        <option value="con arco">Conjunros con arco</option>
-                        <option value="armados">Conjuntos armados</option>
-                    </select>
-            </nav>
-          <div class="contenedor grid grid-template-columns-rows">
-             <section class="lenceria">
+     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/slider1a.jpg" class="d-block w-100 h-50" alt="slider especial">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Sentite especial.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/slider2a.jpg" class="d-block w-100" alt="slider hermosa">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Sentite hermosa.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider3a.jpg" class="d-block w-100" alt="slider comoda">
+            <div class="carousel-caption d-none d-md-block">
+             
+              <p>Sentite comoda.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <main id="productos" class="">
+          
+            <h1 class="lenceria__titulo animate__animated  animate__fadeInRight ">Productos</h1>
+          <div class="lenceria flex-direction ">
+             <section class="lenceria  animate__animated  animate__fadeInLeft">
                 
                 <figure>
                     <img
@@ -67,6 +111,7 @@
                     <p class="precio">
                         $1200</p>
                     <p class="talles">Talle 90</p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
                 <figure>
                      <img
@@ -76,6 +121,7 @@
                                 <figcaption>Aurora fuscia</figcaption>
                                 <p class="precio">$1300</p>
                                 <p class="talles">Talle 90</p>
+                                <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
                 <figure>
                      <img
@@ -85,6 +131,7 @@
                                 <figcaption>Gala negro</figcaption>
                                 <p class="precio"> $1400</p>
                                 <p class="talles">Talle 100</p>
+                                <button type="button" class="btn btn-dark">Comprar</button>
                  </figure>
                 <figure>
                     <img
@@ -94,6 +141,7 @@
                                <figcaption>Isabella rojo</figcaption>
                                <p class="precio"> $1400</p>
                                <p class="talles">Talle 100</p>
+                               <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
                 <figure>
                     <img
@@ -104,6 +152,7 @@
                     <p class="precio">
                         $1400</p>
                     <p class="talles">Talle 90</p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
                 <figure>
                     <img
@@ -114,6 +163,7 @@
                     <p class="precio">
                         $1400</p>
                     <p class="talles">Talle 95</p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
 
                 <figure>
@@ -125,6 +175,7 @@
                     <p class="precio">
                         $1500</p>
                     <p class="talles">Talle 100</p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
                 
 
@@ -137,6 +188,7 @@
                     <p class="precio">
                         $1300</p>
                     <p class="talles">Talle 85</p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
 
                 <figure>
@@ -148,14 +200,17 @@
                     <p class="precio">
                         $1400</p>
                     <p class="talles">Talle 95</p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
                 </figure>
+                
               </section> 
+            </div>  
         </main>
                 <section class="flex-direction nuestra">
                 <div>
-                    <h2 class="nuestra__titulo">Nuestra lenceria de diseño</h2>
+                    <h2 class="nuestra__titulo animate__animated  animate__fadeInRight">Nuestra lenceria de diseño</h2>
                 </div>
-                <div class="video">
+                <div class="video bg-celeste">
                     <iframe
                         width="560"
                         height="315"
@@ -191,5 +246,9 @@
         </div>
     </div>
     </footer>
+<script src="js/wow.min.js"></script>
+        <script>
+         new WOW().init();
+         </script>
 </body>
 </html>
