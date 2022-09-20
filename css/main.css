@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Finlandica:ital@1&family=Roboto:ital,wght@1,300&family=Rubik&family=Satisfy&display=swap");
+.bg-crema {
+  background-color: rgba(255, 192, 144, 0.6039215686);
+}
+
+.bg-celeste {
+  background-color: rgba(227, 252, 250, 0.5215686275);
+}
+
+.bg-gris {
+  background-color: rgba(255, 192, 144, 0.6039215686);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+* html {
+  font-size: 62.5%;
+}
+* h1 {
+  color: #355764;
+  font-size: 4rem;
+}
+* body {
+  background-color: rgba(255, 196, 196, 0.2745098039);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+* .lineal-gradiente {
+  background: rgb(225, 132, 255);
+}
+* h2 {
+  font-size: 3rem;
+}
+* h3 {
+  font-size: 3rem;
+}
+* h1, * h2, * h3 {
+  font-family: "Roboto", sans-serif;
+  color: #355764;
+}
+
+nav {
+  text-align: center;
+}
+nav .botonera {
+  background-color: rgba(255, 192, 144, 0.6039215686);
+  padding: 10px 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+  height: 100px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+  display: flex;
+}
+nav li {
+  display: flex;
+  margin-left: 10px;
+}
+nav a {
+  color: #355764;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif font-size 2rem;
+  display: flex;
+  justify-content: center;
+}
+nav:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#inicio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 0.2rem;
+  margin-left: 5px;
+}
+#inicio h5 {
+  font-size: 2rem;
+  color: #AC7088;
+  padding: 10px;
+  align-items: center;
+}
+#inicio .contenido {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(227, 252, 250, 0.5215686275);
+}
+#inicio h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: rgba(255, 192, 144, 0.6039215686);
+  font-family: "Roboto", sans-serif;
+  margin: 10px 10px;
+}
+#inicio h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: rgba(255, 192, 144, 0.6039215686);
+  font-family: "Roboto", sans-serif;
+  margin: 10px 10px;
+}
+#inicio #consulta h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: rgba(255, 192, 144, 0.6039215686);
+  font-family: "Roboto", sans-serif;
+  margin: 10px 10px;
+}
+#inicio label {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1, 5;
+}/*# sourceMappingURL=main.css.map */

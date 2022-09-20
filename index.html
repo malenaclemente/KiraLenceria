@@ -42,7 +42,7 @@
                     <a class="nav-link active" aria-current="page" href="nosotros.html">Envios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nosotros.html">Productos</a>
+                    <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -60,54 +60,48 @@
             </div>
         </header>
   
-        <main>
-            <section class="text-center presentacion animate__animated  animate__fadeInRight">
-                <h1 class="presentacion__titulo">Lenceria de diseño</h1>
-                 <p class="presentacion__titulo--sm">
+    <main>
+     <div class="contenido flex-direction"> 
+             <section class="text-center presentacion animate__animated  animate__fadeInRight">
+                <h1>Lenceria de diseño</h1>
+                 <p>
                     Kira lenceria cuenta con lenceria de diseño en diferentes telas, tamaños y
                     modelos, siempre buscando la mejor calidad para nuestras clientas y que puedan
                     sentirse hermosas en todo momento.
                  </p>
             </section>
-    <div class="contenido"> 
-        <h2 class="animate__animated  animate__fadeInLeft">Aprovecha nuestras promos!!!</h2>
-            <section id="inicio" class="animate__animated  animate__fadeInLeft">
-           
-                <figure class="img-promos">
-                    <img
-                        src="img/1promo deportivo kalvin clein.jpeg"
-                        alt="Calvin klein"
-                        class="promos__img--fluid">
-                        <figcaption>Deportivo negro</figcaption>
-                    <p class="precio">
-                        $800</p>
-                </figure>
 
-                <figure class="img-promos">
-                    <img
-                        src="img/2promo deportivo.jpeg"
-                        alt="Calvin klein"
-                        class="promos__img--fluid">
-                    <figcaption>Deportivo negro</figcaption>
-                    <p class="precio">
-                        $800</p>
-                </figure>
-              
-                <figure class="img-promos">
-                    <img
-                        src="img/3promo depo.jpeg"
-                        alt="Calvin klein"
-                        class="promos__img--fluid">
-                    <figcaption>Deportivo gris</figcaption>
-                    <p class="precio">
-                        $800</p>
-                </figure>
+         <h2 class="animate__animated  animate__fadeInLeft">Aprovecha nuestras promos!!!</h2>
+            <section id="inicio" class="animate__animated  animate__fadeInLeft">
+              <div class="card" style="width: 25rem;">
+                <img src="img/2promo deportivo.jpeg" class="card-img-top" alt="promo calvin klein">
+                <div class="card-body">
+                  <h5 class="card-title">Deportivo Calvin Klein</h5>
+                  <p class="card-text">$1000</p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>  
+                  <div class="card" style="width: 25rem;">
+                  <img src="img/1promo deportivo kalvin clein.jpeg" class="card-img-top" alt="promo calvin klein">
+                  <div class="card-body">
+                    <h5 class="card-title">Deportivo Calvin Klein</h5>
+                    <p class="card-text">$1000</p>
+                    <a href="#" class="btn btn-dark">Comprar</a>
+                  </div>
+                </div>
+                  <div class="card" style="width: 25rem;">
+                    <img src="img/3promo depo.jpeg" class="card-img-top" alt="promo calvin klein">
+                    <div class="card-body">
+                      <h5 class="card-title">Deportivo Calvin Klein</h5>
+                      <p class="card-text">$1000</p>
+                      <a href="#" class="btn btn-dark">Comprar</a>
+                    </div>
                 </div>
             </section>
       
-            <section id="consulta" class="animate__animated  animate__fadeInRight">
+            <section id="consulta" class=" animate__animated  animate__fadeInRight">
                 <h2 class="text-left index__consultanos--md">Consultanos</h2>
-                <section class="py-3 bg-crema">
+                <section class="py-3 bg-crema flex-direction formulario">
                     <div class="container-fluid">
                         <h3 class="Contacto"></h3>
                         <div class="row">
@@ -123,7 +117,8 @@
                            </article>
     
             </section>
-        </main>
+        </div>    
+      </main>
         <footer class="text-center" id="pie">
             <h2 class="contactanos__titulo">Contactanos</h2>
             <div class="flex-direction contactanos">
@@ -147,5 +142,9 @@
         </div>
     </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+        <script>
+         new WOW().init();
+         </script>
     </body>
 </html>

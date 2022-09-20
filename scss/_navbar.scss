@@ -1,0 +1,39 @@
+//nesting
+nav { 
+     text-align: center;
+     .botonera {
+                background-color: $seisColor  ;
+                padding: 10px 30px; 
+                position: sticky; 
+                display: flex; 
+                justify-content: space-between;
+                align-items: center; 
+     }
+     img {
+        width: 150px;
+        height: 100px;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        margin-left: 30px;
+        display: flex;
+    }
+    li {
+        display: flex;
+        margin-left: 10px;
+    }
+    a {
+        color: $unoColor;
+        text-decoration: none;
+         font-family:$cuatroFont
+         font-size 2rem;
+         display:flex;
+         justify-content: center;
+    }
+    &:hover {
+        color: black;
+        text-decoration: underline;
+    }
+           
+}

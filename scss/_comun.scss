@@ -1,0 +1,68 @@
+//colores
+$unoColor:#355764;
+$dosColor:#ffc4c446;
+$tresColor:rgb(225,132,255);
+$cuatroColor:rgba(255,189,82,0.9528186274509804);
+$cincoColor: #472D2D;
+$seisColor:#ffc0909a;
+$sieteColor:#d2daff7c;
+$ochoColor:#e3fcfa85;;
+$nueveColor:#f7a66cc4;
+$diezColor:#AC7088;
+
+//fondos
+.bg-crema{
+    background-color: $seisColor;
+ }
+ 
+ .bg-celeste {
+     background-color: $ochoColor;
+ }
+
+ .bg-gris{
+     background-color: $seisColor ;
+ }
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Finlandica:ital@1&family=Roboto:ital,wght@1,300&family=Rubik&family=Satisfy&display=swap');
+
+//tipos de fonts
+$unoFont: 'Roboto', sans-serif;
+$dosFont:'Dancing Script', cursive;
+$tresFont:'Finlandica', sans-serif;
+$cuatroFont: 'Rubik', sans-serif;
+$cincoFont: 'Satisfy', cursive;
+   
+
+
+//en comun
+   *{ 
+    padding: 0;
+    margin: 0;
+   html {
+           font-size: 62.5%;
+    }      h1 {
+               color: $unoColor;
+               font-size: 4rem;
+           }  body {
+                    background-color: $dosColor;
+                    background-repeat: repeat;
+                    background-attachment: fixed;
+                }  .lineal-gradiente {
+                                      background: $tresColor;
+                    }                     
+                                      h2 {
+                                          font-size: 3rem;
+                                        } 
+                                          h3 {
+                                              font-size: 3rem; 
+                                        }   
+                                               h1,h2,h3 {
+                                                         font-family:$unoFont;
+                                                         color:$unoColor;
+                                            }
+}
+                                      
+    
+                                            
+                                               
