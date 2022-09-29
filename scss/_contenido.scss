@@ -1,0 +1,156 @@
+// contacto//
+.contactanos {
+    width: auto;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+                                     .dudas{
+                                        margin: 10px;}
+                                        h1 {
+                                        text-transform: uppercase;
+                                        font-size: 3rem;
+                                        text-align: center;
+                                        padding: 10px 10px;
+                                        background-color: #f7a66cc4;
+                                        font-family: 'Roboto', sans-serif;
+                                                                          }
+                                                                          .formulario {
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            align-content: center;
+                                                                            flex-direction: column;
+                                                                            background-color: #ffc0909a;
+                                                                            font-family: 'Roboto', sans-serif;
+                                                                            margin: 10px;}
+                                                                            label {
+                                                                            font-size: 2rem;
+                                                                            margin-left: 5px;
+                                                                            margin-right: 5px; }
+       
+}
+
+//talles
+.talles{
+    h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: $nueveColor;
+    font-family: $unoColor;
+    margin: 10px 10px;}
+    h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: $nueveColor;
+    font-family: $unoFont;
+    margin: 10px 10px;}
+    h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    background-color: $nueveColor;
+    font-family: $unoFont;
+    margin: 10px;}
+    img {
+    height: 60%;
+    width: 60%;
+    border-radius: 5px;}
+    p {
+        margin: 10px;
+        padding: 5px;}
+
+}
+//envios
+.envios {
+    margin: 10px;
+    h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        padding: 10px 10px;
+        background-color: $nueveColor;
+        font-family: $unoColor;
+        margin: 10px 10px;}
+        p {
+            font-size: 2rem;
+             margin: 10px;}
+                           .ubicacion {
+                            width: auto;
+                            margin: 30px auto;
+                            padding: 1px 3px;}
+                            h2 {
+                                text-transform: uppercase;
+                                font-size: 3rem;
+                                text-align: center;
+                                padding: 10px 10px;
+                                background-color: $nueveColor;
+                                font-family: $unoColor;
+                                margin: 10px 10px; }
+                            iframe {
+                                display: flex;
+                                justify-content: center;
+                                margin: 10px; }
+}
+
+
+//extend
+ .btn-violeta{
+    padding: 30px;
+    background: $unoColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:grey;
+    border-radius: 3px;
+    border: black;
+}
+
+.btn-rosa{
+    @extend .btn-violeta;
+    background-color: $diezColor;
+}
+
+
+
+
+//mixins
+@mixin titulos ($forma,$size,$alianeacion,$relleno,$fondo,$margen){
+    text-transform: $forma;
+    font-size: $size;
+    text-align: $alianeacion;
+    padding: $relleno;
+    background-color: $fondo;
+    font-family: $unoFont;
+    margin: $margen; 
+}
+h1 {
+@include titulos (uppercase,3rem,center,10px 10px,$nueveColor,10px 10px,)
+}
+//maps
+$medidas:(
+    chico: 576px,
+    mediano: 768px,
+    xmediano: 992px,
+    grande:1200px,
+    xgrande: 1400px,
+);
+
+//media
+
+@media screen and (min-width: map-get ($medidas: chico)) {
+    .portada__titulo {
+        padding: 50px;
+        font-size: 7rem;}
+}       
+@media screen and (min-width: map-get($medidas:'chico'))  {      
+    .talles {
+        flex-direction: column;
+    }
+}

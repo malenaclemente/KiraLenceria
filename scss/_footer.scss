@@ -1,0 +1,13 @@
+footer {
+    .contactanos {
+                 text-align: center;
+                 padding: 6px 20px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-direction: row
+    }
+    .contactanos__icono--sm {
+        width: 35px;
+    }
+}

@@ -1,0 +1,57 @@
+#productos {
+    h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        padding: 10px 10px;
+        background-color: $nueveColor;
+        font-family: $unoColor;
+        margin: 10px 10px;}
+    h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        padding: 10px 10px;
+        background-color: $nueveColor;
+        font-family: $unoColor;
+        margin: 10px 10px;}
+    .lenceria { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;}
+        .card {
+            margin: 10px;}
+        h4 {
+            font-size: 2rem;
+            color: $unoColor;
+            background-color: #d2daff7c;
+            padding: 5px;} 
+        p {
+            font-size: 1.5rem;
+            padding-bottom: 5px 0;}  
+    .nuestra  {
+      width: auto;
+      margin: 20px 30px;
+      padding: 1px 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;}
+      h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        padding: 10px;
+        background-color: $nueveColor;
+        font-family: $unoFont;
+        margin: 20px 0;}
+    .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;}
+
+}               
+    
+    
+
+
