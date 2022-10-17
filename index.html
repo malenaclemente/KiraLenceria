@@ -30,7 +30,7 @@
                         width="150px"
                         height="100px">
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler md" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,7 +50,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-light" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
@@ -62,7 +62,42 @@
                 <h2 class="portada__titulo">Sentite hermosa y comoda con nuestros conjuntos</h2>
             </div>
         </header>
-  
+        <section class="carrusel flex-direction">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide m-3" data-bs-ride="carousel">
+             <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             </div>  
+             <div class="carousel-inner ">
+               <div class="carousel-item  active" data-bs-interval="10000">
+                 <img src="img/slidernuevo11.png" class="d-block just w-80 h-50" alt="slider dibujo de mujer con ropa interior">
+                 <div class="carousel-caption d-none d-md-block">
+                   
+                 </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                 <img src="img/slider nuevo22.png" class="d-block w-80" alt="slider dibujo de mujer con ropa interior">
+                 <div class="carousel-caption d-none d-md-block">
+                  
+                 </div>
+               </div>
+               <div class="carousel-item">
+                 <img src="img/slidernuevo33.png" class="d-block w-80" alt="slider dibujo de mujer con ropa interior">
+                 <div class="carousel-caption d-none d-md-block">
+                 </div>
+               </div>
+             </div>
+             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+             </button>
+           </div>
+         </section>
     <main>
      <div class="contenido flex-direction"> 
              <section class="text-center presentacion animate__animated  animate__fadeInRight">

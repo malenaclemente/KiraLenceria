@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Finlandica:ital@1&family=Roboto:ital,wght@1,300&family=Rubik&family=Satisfy&display=swap");
-.bg-crema {
-  background-color: rgba(255, 192, 144, 0.6039215686);
+
+.bg-crema{
+   background-color: #ffc0909a;
 }
 
 .bg-celeste {
-  background-color: rgba(227, 252, 250, 0.5215686275);
-}
+    background-color: #d2daff7c;
+   
 
-.bg-gris {
-  background-color: rgba(255, 192, 144, 0.6039215686);
+}
+.bg-gris{
+    background-color:#ffc0909a ;
 }
 
 * {
@@ -27,9 +29,7 @@
   background-repeat: repeat;
   background-attachment: fixed;
 }
-* .lineal-gradiente {
-  background: rgb(225, 132, 255);
-}
+
 * h2 {
   font-size: 3rem;
 }
@@ -288,25 +288,6 @@ footer .contactanos__icono--sm {
   font-size: 10rem;
   text-align: center;
   color: #355764;
-}
-
-.btn-violeta, .btn-rosa {
-  width: 30px;
-  height: 30px;
-  background: #355764;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: grey;
-  border-radius: 3px;
-  border: black;
-}
-.btn-violeta:hover, .btn-rosa:hover {
-  background: rgba(255, 196, 196, 0.2745098039);
-}
-
-.btn-rosa {
-  background-color: #AC7088;
 }
 
 h1 {

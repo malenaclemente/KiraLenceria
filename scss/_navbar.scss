@@ -1,4 +1,3 @@
-//nesting
 nav { 
      text-align: center;
      .botonera {
@@ -35,5 +34,8 @@ nav {
         color: black;
         text-decoration: underline;
     }
-           
+    .nav-item {
+        font-size: 1.7rem !important;
+     
+    }
 }

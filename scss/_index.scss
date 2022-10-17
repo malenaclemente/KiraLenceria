@@ -1,69 +1,98 @@
 #inicio {
     display: flex;
+    background-color: $ochoColor;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center; 
     margin:.2rem;
     margin-left: 5px;
-    h5{
-        font-size: 2rem;
-        color: #AC7088;
-        padding: 10px;
-        align-items: center;
+    p  {
+        font-size: 1,5;
+       }
+    h4{
+    font-size: 2rem;
+    color: $diezColor;
+    padding: 10px;
+    align-items: center;;
     }
-
-    .contenido {
-        text-align: center;
-        font-family: $unoFont;
-        margin: 10px 10px;
-        display: flex;
-        justify-content: space-between;
-        background-color: #e3fcfa85;
-     }
-
-    h1 {
-        text-transform: uppercase;
-        font-size: 3rem;
-        text-align: center;
-        padding: 10px 10px;
-        background-color: $seisColor;
-        font-family: $unoFont;
-        margin: 10px 10px; }
-
-            
-    h2 {
-        text-transform: uppercase;
-        font-size: 3rem;
-        text-align: center;
-        padding: 10px 10px;
-        background-color: $seisColor;
-        font-family: $unoFont;
-        margin: 10px 10px; }
-                            #consulta h2 {
-                                         text-transform: uppercase;
-                                         font-size: 3rem;
-                                         text-align: center;
-                                         padding: 10px 10px;
-                                         background-color: $seisColor;
-                                         font-family: $unoFont;
-                                         margin: 10px 10px; }
-                                         label {
-                                                font-size: 2rem; }
-                                                             
-                                                                    
-                                             
-                                    
-   
-    
-
-    
-}
-
-
-
-
-
- p  {
- font-size: 1,5;
+    .card {
+     margin: 20px;
+     display: flex;
+     justify-content: space-between;
+    }
+           .carrusel {
+            display: flex !important;
+            justify-content: center !important;
+            align-content: center;
+            }                     
+                    .contenido {
+                     text-align: center;
+                    font-family: $unoFont;
+                    margin: 10px 10px;
+                    }
+                    h1 {
+                        text-transform: uppercase;
+                        font-size: 3rem;
+                        text-align: center;
+                        padding: 10px 10px;
+                        background-color: $seisColor;
+                        font-family: $unoFont;
+                        margin: 10px 10px;
+                        }
+                        h2 {
+                        text-transform: uppercase;
+                        font-size: 3rem;
+                        text-align: center;
+                        padding: 10px 10px;
+                        background-color: $seisColor;
+                        font-family: $unoFont;
+                        margin: 10px 10px;
+                        }
+                            #consulta { 
+                             h2{
+                                text-transform: uppercase;
+                                font-size: 3rem;
+                                text-align: center;
+                                padding: 10px 10px;
+                                background-color: $seisColor;
+                                font-family: $unoFont;
+                                margin: 10px 10px;    
+                                } 
+                                label {
+                                    font-size: 2rem; }    
+                            }             h1 {
+                                text-transform: uppercase;
+                                font-size: 3rem;
+                                text-align: center;
+                                padding: 10px 10px;
+                                background-color: $seisColor;
+                                font-family: $unoFont;
+                                margin: 10px 10px;
+                                }
+                                h2 {
+                                text-transform: uppercase;
+                                font-size: 3rem;
+                                text-align: center;
+                                padding: 10px 10px;
+                                background-color: $seisColor;
+                                font-family: $unoFont;
+                                margin: 10px 10px;
+                                }
+                                    #consulta { 
+                                     h2{
+                                        text-transform: uppercase;
+                                        font-size: 3rem;
+                                        text-align: center;
+                                        padding: 10px 10px;
+                                        background-color: $seisColor;
+                                        font-family: $unoFont;
+                                        margin: 10px 10px;    
+                                        } 
+                                        label {
+                                            font-size: 2rem; }    
+                                    }            
+                          
+                                                                             
+                  
 }

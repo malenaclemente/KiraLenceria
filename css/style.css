@@ -34,6 +34,7 @@ h1,h2,h3 {
  font-family:'Roboto', sans-serif;
 }
 
+
 main section p {
     color: gray;
     font-family: 'Roboto', sans-serif;
@@ -80,6 +81,10 @@ nav ul li a:hover{
     text-decoration: underline;}
 
 
+.nav-item {
+    font-size: 1.7rem !important;
+ 
+}
 .bg-crema{
    background-color: #ffc0909a;
 }
@@ -102,7 +107,7 @@ nav ul li a:hover{
     text-align: left;
 }
 
-/* header*/
+
 .portada__titulo {
     background-image: url(../img/header10.jpg);
     margin: 10px; 
@@ -113,7 +118,7 @@ nav ul li a:hover{
    
 }
 
-/* footer*/
+
 .contactanos {
     text-align: center;
     padding: 6px 20px;
@@ -130,7 +135,7 @@ nav ul li a:hover{
     font-size: 2rem;
 }
 
-/*/talles/*/
+
 
 .talles h1{
     text-transform: uppercase;
@@ -171,24 +176,13 @@ nav ul li a:hover{
 }
 
 
-/*/index/*/
-#inicio {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center; 
-    margin:.2rem;
-    margin-left: 5px;
-   
-}
 .contenido {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 10px 10px; }
     
 
-    .contenido h1 {
+.contenido h1 {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
@@ -196,14 +190,14 @@ nav ul li a:hover{
     background-color: #f7a66cc4;
     font-family: 'Roboto', sans-serif;
     margin: 10px 10px; }
-    .contenido h2 {
-        text-transform: uppercase;
-        font-size: 3rem;
-        text-align: center;
-        padding: 10px 10px;
-        background-color: #f7a66cc4;
-        font-family: 'Roboto', sans-serif;
-        margin: 10px 10px; }
+.contenido h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #f7a66cc4;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 10px; }
 
 #consulta h2 {
 text-transform: uppercase;
@@ -220,8 +214,13 @@ font-size: 2rem; }
 
 #inicio {
     display: flex;
-    justify-content: space-between;
     background-color: #e3fcfa85;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; 
+    margin:.2rem;
+    margin-left: 5px;
 }
 #inicio h4{
     font-size: 2rem;
@@ -229,12 +228,23 @@ font-size: 2rem; }
     padding: 10px;
     align-items: center;
 }
-
+ #inicio .card {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+ }
  p  {
  font-size: 1,5;
+ margin: 7px;
 }
 
-/*/ envios /*/
+.carrusel {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center;
+}
+
+
 
 .envios {
     margin: 10px;
@@ -265,13 +275,13 @@ font-size: 2rem; }
     background-color: #f7a66cc4;
     font-family: 'Roboto', sans-serif;
 }
-.ubicacion iframe {
+.mapa {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-/*/contacto/*/
+
 .contactanos {
     width: auto;
     margin: auto;
@@ -308,7 +318,8 @@ margin: 10px;
     font-size: 2rem;
     margin-left: 5px;
     margin-right: 5px; }
-/*/productos/*/
+
+
 #productos h1,
 #productos h2 {
     text-transform: uppercase;
@@ -328,6 +339,7 @@ margin: 10px;
 }
 #productos .card {
     margin: 10px;
+    
 }
 #productos .lenceria h4{
     font-size: 2rem;
@@ -364,14 +376,43 @@ margin: 10px;
    align-items: center;
 }
 
-/*media */
-@media screen and (min-width: 576px) {
+
+@media screen and (min-width: 320px) {
     .portada__titulo {
         padding: 50px;
         font-size: 7rem;}
 }       
-@media screen and (min-width: 576px)  {      
+@media screen and (min-width: 320px)  {      
     .talles {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 970px)  {      
+    .carrusel {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px)  {      
+    .carrusel {
+        flex-direction: row;
+        justify-content: center !important;
+    }
+} 
+@media screen and (max-width: 620px)  {      
+   .portada__titulo{
+    font-size: 5rem;
+    padding: 10px;
+   }
+} 
+@media screen and (max-width: 620px)  {      
+    .talles h1, .talles h2, .nuestra h1, .nuestra h2, #productos h1, #productos h2, .dudas h1, .ubicacion h2, .envios h1, #consulta h2, .contenido h1, .contenido h2, .talles h1, .talles h2{
+     font-size: 2rem;
+    }
+}
+@media screen and (max-width: 620px)  {      
+    .talles h3{
+        font-size: 1.5rem;
     }
 }

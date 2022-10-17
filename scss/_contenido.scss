@@ -1,4 +1,3 @@
-// contacto//
 .contactanos {
     width: auto;
     margin: auto;
@@ -32,7 +31,6 @@
        
 }
 
-//talles
 .talles{
     h1 {
     text-transform: uppercase;
@@ -67,7 +65,7 @@
         padding: 5px;}
 
 }
-//envios
+
 .envios {
     margin: 10px;
     h1 {
@@ -93,64 +91,10 @@
                                 background-color: $nueveColor;
                                 font-family: $unoColor;
                                 margin: 10px 10px; }
-                            iframe {
-                                display: flex;
-                                justify-content: center;
-                                margin: 10px; }
+                            .mapa {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 10px;
+                                }
 }
 
-
-//extend
- .btn-violeta{
-    padding: 30px;
-    background: $unoColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:grey;
-    border-radius: 3px;
-    border: black;
-}
-
-.btn-rosa{
-    @extend .btn-violeta;
-    background-color: $diezColor;
-}
-
-
-
-
-//mixins
-@mixin titulos ($forma,$size,$alianeacion,$relleno,$fondo,$margen){
-    text-transform: $forma;
-    font-size: $size;
-    text-align: $alianeacion;
-    padding: $relleno;
-    background-color: $fondo;
-    font-family: $unoFont;
-    margin: $margen; 
-}
-h1 {
-@include titulos (uppercase,3rem,center,10px 10px,$nueveColor,10px 10px,)
-}
-//maps
-$medidas:(
-    chico: 576px,
-    mediano: 768px,
-    xmediano: 992px,
-    grande:1200px,
-    xgrande: 1400px,
-);
-
-//media
-
-@media screen and (min-width: map-get ($medidas: chico)) {
-    .portada__titulo {
-        padding: 50px;
-        font-size: 7rem;}
-}       
-@media screen and (min-width: map-get($medidas:'chico'))  {      
-    .talles {
-        flex-direction: column;
-    }
-}

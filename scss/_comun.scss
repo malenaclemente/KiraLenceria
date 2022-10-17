@@ -1,4 +1,3 @@
-//colores
 $unoColor:#355764;
 $dosColor:#ffc4c446;
 $tresColor:rgb(225,132,255);
@@ -9,24 +8,12 @@ $sieteColor:#d2daff7c;
 $ochoColor:#e3fcfa85;;
 $nueveColor:#f7a66cc4;
 $diezColor:#AC7088;
+$doceColor:grey;
+$treceColor: black;
 
-//fondos
-.bg-crema{
-    background-color: $seisColor;
- }
- 
- .bg-celeste {
-     background-color: $ochoColor;
- }
-
- .bg-gris{
-     background-color: $seisColor ;
- }
-
-//fonts
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Finlandica:ital@1&family=Roboto:ital,wght@1,300&family=Rubik&family=Satisfy&display=swap');
 
-//tipos de fonts
+
 $unoFont: 'Roboto', sans-serif;
 $dosFont:'Dancing Script', cursive;
 $tresFont:'Finlandica', sans-serif;
@@ -35,7 +22,7 @@ $cincoFont: 'Satisfy', cursive;
    
 
 
-//en comun
+
    *{ 
     padding: 0;
     margin: 0;
@@ -48,28 +35,81 @@ $cincoFont: 'Satisfy', cursive;
                     background-color: $dosColor;
                     background-repeat: repeat;
                     background-attachment: fixed;
-                }  .lineal-gradiente {
-                                      background: $tresColor;
-                    }                     
-                                      h2 {
-                                          font-size: 3rem;
-                                        } 
-                                          h3 {
-                                              font-size: 3rem; 
-                                        }   
-                                               h1,h2,h3 {
-                                                         font-family:$unoFont;
-                                                         color:$unoColor;
-                                            }
+                } 
+                    h2 {
+                         font-size: 3rem;
+                    } 
+                    h3 {
+                        font-size: 3rem; 
+                    }   
+                    h1,h2,h3 {
+                                font-family:$unoFont;
+                                 color:$unoColor;
+                     }
 }
+
+main {
+    section {
+        p {
+            color: $doceColor;
+            font-family: $unoFont;
+            font-size: 2rem;
+            line-height: 2.2rem;
+            font-weight: 400;  
+        }
+    }
+}
+
+
                                       
-//header
+
 .portada__titulo {
     background-image: url(../img/header10.jpg);
     margin: 10px; 
     font-size: 10rem;
     text-align: center;
-    color: #355764;
-    font-family: 'Dancing Script', cursive;
+    color: $unoColor;
+    font-family: $dosFont;
    
+}
+
+@media screen and (min-width: 620px) {
+    .portada__titulo {
+        font-size: 5rem;
+        padding: 10px;}
+
+}       
+@media screen and (min-width: 320px)  {      
+    .talles {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 970px)  {      
+    .carrusel {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px)  {      
+    .carrusel {
+        flex-direction: row;
+        justify-content: center !important;
+    }
+} 
+@media screen and (max-width: 620px)  {      
+   .portada__titulo{
+    font-size: 5rem;
+    padding: 10px;
+   }
+} 
+@media screen and (max-width: 620px)  {      
+    .talles h1, .talles h2, .nuestra h1, .nuestra h2, #productos h1, #productos h2, .dudas h1, .ubicacion h2, .envios h1, #consulta h2, .contenido h1, .contenido h2, .talles h1, .talles h2{
+     font-size: 2rem;
+    }
+}
+@media screen and (max-width: 620px)  {      
+    .talles h3{
+        font-size: 1.5rem;
+    }
 }
